@@ -1,0 +1,148 @@
+/* Main container */
+.login-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  /* Background image */
+  .background-image {
+    position: absolute;
+    inset: 0;
+    background-image: url('background.jpg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  }
+  
+  /* Login card */
+  .login-card {
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    padding: 3rem;
+    width: 100%;
+    max-width: 28rem;
+    z-index: 10;
+  }
+  
+  .login-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 2.5rem;
+  }
+  
+  /* Form styles */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .input-label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #4b5563;
+    margin-left: 0.25rem;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #FBBB04;
+    border-color: #FBBB04;
+  }
+  
+  /* Password field with toggle button */
+  .password-container {
+    position: relative;
+  }
+  
+  .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .eye-icon {
+    color: #6b7280;
+    font-size: 1.25rem;
+  }
+  
+  /* Login button */
+  .login-button {
+    width: 100%;
+    background-color: #4086f4;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.875rem 1rem;
+    border-radius: 9999px;
+    border: none;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    margin-top: 1rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .login-button:hover {
+    background-color: #3776db;
+  }
+  
+  /* College logo and name - at the bottom of the page */
+  .college-info {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 20;
+  }
+  
+  .college-logo {
+    background-color: #e5e7eb;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+  }
+  
+  .college-name {
+    color: #FBBB04; /* Golden yellow as specified */
+    font-weight: 500;
+    font-size: 1.125rem;
+  }
