@@ -1,0 +1,116 @@
+/* Centering the container */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  padding: 20px;
+}
+
+/* Styling the register box */
+.register-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 420px;
+  text-align: center;
+}
+
+/* Header styles */
+.register-box h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+/* Input fields alignment */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+/* Styling for input fields */
+.input-group input,
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Focus effect for input */
+.input-group input:focus,
+input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+/* Password group styling */
+.password-group {
+  position: relative;
+}
+
+/* Password visibility toggle */
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Register button styling */
+.register-button {
+  width: 100%;
+  background-color: #3b82f6;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 15px;
+}
+
+/* Button hover effect */
+.register-button:hover {
+  background-color: #2563eb;
+}
+
+/* Error message styling */
+.error-message {
+  background-color: #ffe5e5;
+  color: #b91c1c;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Link section */
+.links {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Styling for login link */
+.links a {
+  text-decoration: none;
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
